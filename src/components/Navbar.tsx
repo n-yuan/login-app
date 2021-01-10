@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ navConfig }) => {
   useEffect(() => {
     const currentPath = location.pathname;
     setCurrent(getKeyFromPath(navConfig, currentPath));
-  }, [location]);
+  }, [location, navConfig]);
 
   const renderNav = (navConfig: NavConfigType) => {
     return navConfig.map((item) => {

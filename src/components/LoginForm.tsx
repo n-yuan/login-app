@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Input, Button, message } from "antd";
 import { ILogin } from "../interface/auth";
 import { useHistory } from "react-router-dom";
-import { API_URL, API_PATH } from "../constants/path";
-import axios from "axios";
+import { auth } from "../api/index";
 
 const LoginForm: React.FC = () => {
   const history = useHistory();
@@ -23,19 +22,8 @@ const LoginForm: React.FC = () => {
   };
 
   const login = async (loginInfo: ILogin) => {
-    const config = {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    };
-    console.log(`${API_URL}${API_PATH.login()}`);
     try {
-      const res = await axios.post(
-        `${API_URL}${API_PATH.login()}`,
-        loginInfo,
-        config
-      );
-
+      const res = await auth.login(loginInfo);
       if (res.data.token) {
         message.success("Login Success", 5);
       }
