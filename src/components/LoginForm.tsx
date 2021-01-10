@@ -17,8 +17,12 @@ const LoginForm: React.FC = () => {
     setLoginInfo({ ...loginInfo, [e.target.name]: e.target.value });
 
   const onSubmit = () => {
-    setLoading(true);
-    login(loginInfo);
+    if (loginInfo.email !== "" && loginInfo.password !== "") {
+      setLoading(true);
+      login(loginInfo);
+    } else {
+      message.warning("Please enter you email and password", 5);
+    }
   };
 
   const login = async (loginInfo: ILogin) => {
