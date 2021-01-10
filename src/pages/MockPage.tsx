@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import { RouteComponentProps } from "react-router";
 
@@ -11,9 +11,11 @@ interface MockPageProps extends RouteComponentProps<MatchParams> {}
 const MockPage: React.FC<MockPageProps> = (props) => {
   const { match } = props;
   return (
-    <Fragment>
-      <h1>Mock page {match.params.id}</h1>
-    </Fragment>
+    <div className="container">
+      <div className="page-header__wrapper">
+        <h1 className="page-header__text">Mock page {match.params.id}</h1>
+      </div>
+    </div>
   );
 };
 

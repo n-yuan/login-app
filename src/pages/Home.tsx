@@ -1,10 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const Home: React.FC = () => {
   return (
-    <Fragment>
-      <h1>Home page</h1>
-    </Fragment>
+    <div className="container">
+      <div className="page-header__wrapper">
+        <h1 className="page-header__text">Home page</h1>
+      </div>
+    </div>
   );
 };
 

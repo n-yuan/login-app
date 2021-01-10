@@ -1,0 +1,46 @@
+$primary-color: #1167b8;
+
+.page-header {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  &__text {
+    color: $primary-color;
+  }
+}
+
+.center-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.login-form {
+  width: 400px;
+  &__input-wrapper {
+    margin: 20px 0;
+  }
+  &__button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  &__button-wrapper {
+    width: 100%;
+  }
+  &__sub-info-container {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 300;
+  }
+}
