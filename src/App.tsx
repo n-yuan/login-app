@@ -6,12 +6,13 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import MockPage from "./pages/MockPage";
+import navbarConfig from "./components/config/NavConfig.json";
 
 function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        <Navbar navConfig={navbarConfig} />
         <div>
           <Switch>
             <Route exact path="/" component={Home} />

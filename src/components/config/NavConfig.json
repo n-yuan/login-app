@@ -1,0 +1,67 @@
+[
+  {
+    "key": "home",
+    "name": "Home",
+    "type": "item",
+    "icon": "home",
+    "link": "/"
+  },
+  {
+    "key": "subNav",
+    "name": "SubNav",
+    "type": "subMenu",
+    "icon": "content",
+    "list": [
+      {
+        "key": "mock1",
+        "name": "Mockpage 1",
+        "type": "item",
+        "icon": "mock",
+        "link": "/mockpage/1"
+      },
+      {
+        "key": "mock2",
+        "name": "Mockpage 2",
+        "type": "item",
+        "icon": "mock",
+        "link": "/mockpage/2"
+      },
+      {
+        "key": "subNav-level2",
+        "name": "SubNav-level2",
+        "type": "subMenu",
+        "icon": "content",
+        "list": [
+          {
+            "key": "mock3",
+            "name": "Mockpage 3",
+            "type": "item",
+            "icon": "mock",
+            "link": "/mockpage/3"
+          },
+          {
+            "key": "mock4",
+            "name": "Mockpage 4",
+            "type": "item",
+            "icon": "mock",
+            "link": "/mockpage/4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "about",
+    "name": "About",
+    "type": "item",
+    "icon": "info",
+    "link": "/about"
+  },
+  {
+    "key": "login",
+    "name": "Login",
+    "type": "item",
+    "icon": "login",
+    "link": "/login"
+  }
+]
